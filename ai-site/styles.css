@@ -1,0 +1,107 @@
+ /* Banner section */
+ main .banner {
+    background-image: url('./images/ai.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main header {
+    background-color: white;
+}
+
+main .app-title {
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+main header>* {
+    display: inline-block;
+}
+
+main header nav a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+main header nav a:hover {
+    background-color: rgb(213, 247, 253);
+}
+
+main header .search-field {
+    float: right;
+    margin: 15px;
+    /* border-bottom: 1px solid black; */
+    transition: border 1s;
+}
+
+main header input {
+    border: none;
+    outline-style: none;
+    padding: 3px;
+    width: 60%;
+    border-bottom: 1px solid black;
+}
+
+main header i {
+    border-bottom: 1px solid black;
+    padding-bottom: 4px;
+    margin-left: -4px;
+}
+
+main header input:focus {
+    color: cadetblue;
+    border-color: rgb(72, 198, 248);
+}
+
+main header input:focus ~ i {
+    color: rgb(72, 198, 248);
+    border-color: rgb(72, 198, 248);
+}
+
+main .banner .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    padding: 30px;
+    font-size: large;
+    line-height: 1.5;
+    background-color: rgba(255, 255, 255, 0.733);
+}
+
+/* Features section */
+.features {
+    padding: 20px 30px;
+}
+
+.features h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.features>div {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    height: 45%;
+}
+
+.features img {
+    width: 22%;
+    float: left;
+    /* clip-path: circle();
+    shape-outside: circle(); */
+}
+
+.features div:nth-of-type(even) img {
+    float: right;
+}
+
+.features>div>p {
+    padding: 20px;
+    line-height: 1.5;
+}
